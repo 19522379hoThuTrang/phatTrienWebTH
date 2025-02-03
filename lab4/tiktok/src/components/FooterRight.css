@@ -1,0 +1,129 @@
+.footer-right {
+    z-index: 100;
+    color: #fff;
+    margin-right: 5px;
+    margin-bottom: 25px;
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidebar-icon:hover {
+    transform: scale(1.1);
+}
+
+.sidebar-icon .userprofile {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.sidebar-icon .useradd {
+    border-radius: 50%;
+    background-color: #ff3b5c;
+    color: white;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.liked {
+    color: #ff3b5c !important;
+}
+
+.saved {
+    color: #ffc107 !important;
+}
+
+.record {
+    animation: spinTheRecord infinite 5s linear;
+    filter: invert(1);
+}
+
+.record img {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #b3afaf;
+}
+
+@keyframes spinTheRecord {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.share-popup {
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.share-popup p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.share-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.share-icons img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.share-icons img:hover {
+    transform: scale(1.2);
+}
