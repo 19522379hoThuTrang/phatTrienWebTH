@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculator {
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input {
+            width: 50px;
+        }
+
+        button {
+            margin: 5px;
+        }
+
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #clock {
+            font-size: 48px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <input type="number" id="num1" placeholder="0">
+        <input type="number" id="num2" placeholder="0">
+        <br>
+        <button id="add">+</button>
+        <button id="subtract">-</button>
+        <button id="multiply">*</button>
+        <button id="divide">/</button>
+        <h3>Result: <span id="result">0</span></h3>
+    </div>
+
+    <div style="text-align: center;">
+        <h1>Dynamic Table Generator</h1>
+        <input type="number" id="rows" placeholder="Rows">
+        <input type="number" id="cols" placeholder="Columns">
+        <button id="generate">Generate Table</button>
+    </div>
+    <div id="tableContainer"></div>
+
+    <h1>Digital Clock</h1>
+    <div id="clock"></div>
+
+    <h1>Guess the number (1-100)</h1>
+    <input type="number" id="guess" placeholder="Enter your guess">
+    <button id="submitGuess">Guess</button>
+    <p id="feedback"></p>
+
+    <script src="./js.js"></script>
+</body>
+
+</html>
