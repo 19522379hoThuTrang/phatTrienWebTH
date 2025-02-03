@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="paint.css">
+</head>
+
+<body>
+    <div class="toolbar">
+        <button>File</button>
+        <button>Home</button>
+        <button>View</button>
+    </div>
+
+    <div class="tool">
+        <div class="Clipboard">
+            <span class="save">
+                <span class="paste">
+                    <img src="./img/paste.png" class="imgPaste">
+                    <p>Paste</p>
+                    <img src="./img/dropDown.png" class="dropDown">
+                </span>
+                <span class="muc">
+                    <span class="item">
+                        <img src="./img/keo.png" class="keo">
+                        <p>Cut</p>
+                    </span>
+
+                    <span class="item">
+                        <img src="./img/copy.png" class="keo">
+                        <p>Copy</p>
+                    </span>
+                </span>
+            </span>
+            <p class="title">Clipboard</p>
+        </div>
+
+        <div class="Image">
+            <span class="imageSelect">
+                <span class="select">
+                    <img src="./img/selection.jpg" class="rectangle">
+                    <p>Select</p>
+                    <img src="./img/dropDown.png" class="dropDown">
+                </span>
+                <span class="muc">
+                    <span class="item">
+                        <img src="./img/crop.png" class="crop">
+                        <p>Crop</p>
+                    </span>
+
+                    <span class="item">
+                        <img src="./img/resize.png" class="resize">
+                        <p>Resize</p>
+                    </span>
+
+                    <span class="item">
+                        <img src="./img/rotate.png" class="rotate">
+                        <p>Rotate</p>
+                    </span>
+                </span>
+            </span>
+            <p class="title">Image</p>
+        </div>
+
+        <div class="Tools">
+            <span class="muc">
+                <div class="item">
+                    <img src="./img/pencil.png" class="tools">
+                    <img src="./img/thungSon.png" class="tools">
+                    <img src="./img/A.png" class="tools">
+                </div>
+                <div class="item">
+                    <img src="./img/eraser.png" class="tools">
+                    <img src="./img/colorPicker.png" class="tools">
+                    <img src="./img/kinhLup.png" class="tools">
+                </div>
+            </span>
+            <p class="title">Tools</p>
+        </div>
+
+        <div class="Brushes">
+            <img src="./img/brushes.png" class="brushes">
+            <p>Brushes</p>
+            <img src="./img/dropDown.png" class="dropDown">
+        </div>
+
+        <div class="Shapes">
+            <div class="hinhHoc">
+                <div class="muc">
+                    <div class="item">
+                        <img src="./img/line.png" class="itemDetail">
+                        <img src="./img/curve.png" class="itemDetail">
+                        <img src="./img/oval.png" class="itemDetail">
+                        <img src="./img/rectangle.png" class="itemDetail">
+                        <img src="./img/selection.jpg" class="itemDetail">
+                        <img src="./img/polygon.png" class="itemDetail">
+                        <img src="./img/triangle.jpg" class="itemDetail">
+                    </div>
+                    <div class="item">
+                        <img src="./img/rightAngledTriangle.png" class="itemDetail">
+                        <img src="./img/diamond.png" class="itemDetail">
+                        <img src="./img/hexagon.png" class="itemDetail">
+                        <img src="./img/pentagon.png" class="itemDetail">
+                        <img src="./img/rightArrow.png" class="itemDetail">
+                        <img src="./img/rightArrow.png" class="itemDetail leftArrow">
+                        <img src="./img/rightArrow.png" class="itemDetail upArrow">
+                    </div>
+                    <div class="item">
+                        <img src="./img/rightArrow.png" class="itemDetail downArrow">
+                        <img src="./img/fourPointStar.png" class="itemDetail">
+                        <img src="./img/fivePointStar.png" class="itemDetail">
+                        <img src="./img/sixPointStar.png" class="itemDetail">
+                        <img src="./img/roundedRectangleCallout.png" class="itemDetail">
+                        <img src="./img/ovalCallout.png" class="itemDetail">
+                        <img src="./img/cloudCallout.png" class="itemDetail">
+                    </div>
+                </div>
+                <div class="muc">
+                    <div class="item">
+                        <img src="./img/Up.png" class="itemDetail">
+                    </div>
+                    <div class="item">
+                        <img src="./img/Up.png" class="itemDetail downArrow">
+                    </div>
+                    <div class="item">
+                        <img src="./img/arrow-up.jpg" class="itemDetail downArrow">
+                    </div>
+                </div>
+                <span class="muc1">
+                    <span class="item">
+                        <img src="./img/shapeOutline.png" class="crop">
+                        <p>Outline</p>
+                        <img src="./img/dropDown.png" class="crop">
+                    </span>
+
+                    <span class="item">
+                        <img src="./img/shapeFill.png" class="resize">
+                        <p>Fill</p>
+                        <img src="./img/dropDown.png" class="resize">
+                    </span>
+                </span>
+            </div>
+            <p class="title">Shapes</p>
+        </div>
+
+        <div class="lineSize">
+            <img src="./img/lineSize.png" class="lines">
+            <p>Size</p>
+            <img src="./img/dropDown.png" class="dropDown">
+        </div>
+
+        <div class="MainColour">
+            <div class="colour">
+                <div class="muc">
+                    <div class="mainColour black"></div>
+                    <p>Colour</p>
+                    <p>1</p>
+                </div>
+                <div class="muc">
+                    <div class="mainColour white"></div>
+                    <p>Colour</p>
+                    <p>2</p>
+                </div>
+                <div class="muc">
+                    <div class="item">
+                        <div class="minColour red"></div>
+                        <div class="minColour blue"></div>
+                        <div class="minColour yellow"></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                    </div>
+                    <div class="item">
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                    </div>
+                    <div class="item">
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                        <div class="minColour "></div>
+                    </div>
+                </div>
+                <div class="muc">
+                    <img src="./img/editColour.png" class="editColour">
+                    <p>Edit colours</p>
+                </div>
+            </div>
+            <p class="title">Colours</p>
+        </div>
+
+        <div class="Paint3D">
+            <img src="./img/paint3D.png" class="paint3D">
+            <p>Edit with Paint 3D</p>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="page"></div>
+    </div>
+</body>
+
+</html>
