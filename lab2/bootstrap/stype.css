@@ -1,0 +1,20 @@
+.ex1 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 30px;
+}
+
+.khung {
+    padding: 30px;
+    border: 1px solid #555;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.vien {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
